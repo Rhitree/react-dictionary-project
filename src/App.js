@@ -13,23 +13,17 @@ export default function App() {
         className="App-logo"
         alt="logo" />
         </div>
-        <div className="col-8">Dictionary App</div>
+          <div className="col-8">
+             <h1 className="App-Header">Dictionary App</h1>
+          </div>
         </div>
       </header>
           <main>
+            <h3 className="App-H3">Search for word definitions, pronunciations and more</h3>
            <Dictionary />
          </main>
          <footer>
-            <div className="row">
-                <div className="col-9">
                   Coded by Rhian Jenkins, open sourced on Github and hosted on Netlify
-                  </div>
-                  <div className="col-3">
-                  <img src={quill}
-                  className="quill"
-                  alt="quill" />
-                </div>
-            </div>
           </footer>
     </div>
   );
