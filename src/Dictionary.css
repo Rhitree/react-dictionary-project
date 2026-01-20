@@ -5,5 +5,8 @@
 input {
     border-radius: 10px;
     border: solid #B2BEB5;
-    width: 500px
+    width: 80%;
+    background-color: #e5af2a;
+    opacity: 0.2;
+    color: black;
 }

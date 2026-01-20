@@ -1,6 +1,5 @@
 import './App.css';
 import logo from "./logo.png";
-import quill from "./quill.png"
 import Dictionary from "./Dictionary.js"
 
 export default function App() {
