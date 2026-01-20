@@ -52,9 +52,6 @@ if (loaded) {
                     defaultValue={props.defaultKeyword} 
                     />
                 </form>
-                    <div className="hint">
-                        E.g.
-                    </div>
             </section>
             <Results results={results} />
             <Photos photos={photos} />
