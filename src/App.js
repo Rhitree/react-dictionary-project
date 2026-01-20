@@ -22,7 +22,7 @@ export default function App() {
            <Dictionary />
          </main>
          <footer>
-                  Coded by Rhian Jenkins, open sourced on Github and hosted on Netlify
+                  Coded by Rhian Jenkins, open sourced on <a href='https://github.com/Rhitree/react-dictionary-project'>Github</a> and hosted on <a href='https://lucent-semifreddo-3769fe.netlify.app/'>Netlify</a>
           </footer>
     </div>
   );
