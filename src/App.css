@@ -9,6 +9,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: auto;
   margin: auto;
+  border: double 3px rgb(125, 1, 33, 0.5);  
 }
 
 .App-logo {
@@ -34,17 +35,30 @@ body {
 
 .App-H3 {
   padding: 10px;
+  margin-left: 30px;
+  margin-top: -20px;
   text-align: center;
   color: #B2BEB5;
   font-size: 15px;
 }
 
 footer {
+  display: block;
+  padding: 10px;
+  margin: auto;
   text-align: center;
   color: #FFFFFF;
-  font-size: 25px;
-  font-family: "Luxurious Script", cursive;
+  font-size: 15px;
+  font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(125, 1, 33, 0.9);
+  background-color: rgb(125, 1, 33, 0.8);
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+
+  a ::hover {
+    color: rgb(229, 175, 42);
   }
