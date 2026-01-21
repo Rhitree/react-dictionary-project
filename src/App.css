@@ -41,9 +41,10 @@ body {
 
 footer {
   text-align: center;
-  color: #36454F;
+  color: #FFFFFF;
   font-size: 25px;
   font-family: "Luxurious Script", cursive;
   font-weight: 400;
   font-style: normal;
-}
+  background-color: rgb(125, 1, 33, 0.9);
+  }
