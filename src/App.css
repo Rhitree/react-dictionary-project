@@ -62,3 +62,27 @@ footer {
   a ::hover {
     color: rgb(229, 175, 42);
   }
+
+  @media (max-width: 400px) {
+
+    .App-Header {
+      font-size: 20px;
+      text-align: left;
+      margin-left: 1px;
+      margin-bottom: 25px;
+    }
+    
+    .App-logo {
+      display: block;
+      width: 60px
+    }
+
+    .App-H3 {
+      font-size: 10px;
+      margin-bottom: -15px;
+    }
+
+    footer {
+      display: none;
+    }
+  }
