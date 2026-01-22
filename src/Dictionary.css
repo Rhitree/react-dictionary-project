@@ -2,8 +2,8 @@ input {
     display: block;
     padding-left: 15px;
     margin: auto;
+    border: solid 2px rgb(229, 175, 42, 0.4);
     border-radius: 10px;
-    border: double 3px rgb(125, 1, 33, 0.5);
     width: 80%;
     background-color: rgb(229, 175, 42, 0.2) ;
     color: #5C5C5C;
@@ -14,9 +14,9 @@ button {
     border-radius: 30px;
     height: 50px;
     width: 50px;
-    border: double 3px rgb(125, 1, 33, 0.5);
+    border: double 2px rgb(125, 1, 33, 0.5);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+    transition: all 150ms ease-in-out;
 }
 
 section {
@@ -43,4 +43,14 @@ section {
     margin: auto;
     padding: auto;
     color: rgb(125, 1, 33);
+}
+
+button:hover {
+    transform: scale(1.1) perspective(1px);
+}
+
+hr {
+    background-color: rgb(229, 175, 42, 0.4);
+    border: solid 2px rgb(229, 175, 42, 0.4);
+    border-radius: 10px;
 }
