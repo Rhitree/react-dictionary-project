@@ -5,9 +5,8 @@ export default function Photos(props) {
     if (props.photos) {
         return (
             <section className="Photos">
-                <div className="block"></div>
                 <div className="row">
-                    {props.photos.map(function(photo, index){
+                    {props.photos.map(function (photo, index){
                         return (
                             <div className="col-4" key={index}>
                                 <a href={photo.src.original}
@@ -20,6 +19,7 @@ export default function Photos(props) {
                     </div>
                 </section>
             );
-        }
+        } else {
     return null;
+    }
 }
