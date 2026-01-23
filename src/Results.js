@@ -9,13 +9,9 @@ export default function Results(props) {
         <div className="Results">
             <section>
                 <h2 className="text-capitalize">{props.results.word}</h2>
-                {props.results.phonetics.map(function (phonetic, index) {
-                    return (
-                        <div key={index}>
-                            <Phonetics phonetic={phonetic} />
-                        </div>
-                    );
-                })}
+
+                            <Phonetics phonetic={props.results.phonetic} />
+                        
                 </section>
                 {props.results.meanings.map(function (meaning, index) {
                     return  (
