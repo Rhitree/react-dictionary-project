@@ -26,10 +26,23 @@ export default function Dictionary(props) {
         axios.get(apiUrl).then(handleResponse);
 
         let pexelsApiKey ="ozZf2v8mtOfAXNlDtC6vD6f5rv51XfK7OTGJyuCGXNvy9NGyu3nnbnA8";
-        let pexelsApiUrl=`https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+        let pexelsApiUrl=`https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
         let headers = { Authorization: `${pexelsApiKey}` };
         axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
-    }
+      axios
+      .get(`${pexelsApiUrl}`, {
+        headers: {
+          Authorization: `${pexelsApiKey}`,
+        },
+      })
+      .then((response) => {
+        setPhotos(response.data.photos);
+      })
+      .catch((error) => {
+        console.error("Pexels API error:", error);
+        setPhotos(null);
+      });
+  }
 
     function handleSubmit(event) {
         event.preventDefault();
