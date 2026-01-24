@@ -4,11 +4,11 @@
 }
 
 .Synonyms li {
+    margin-top: 10px;
     display: inline-block;
-    padding-right: 20px;
-    padding-top: 15px;
-}
-
-.Synonyms li:after {
-    content: " , ";
+    background-color: rgb(125, 1, 33, 0.9);
+    border-radius: 30px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-right: 10px;
 }
